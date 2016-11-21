@@ -15,6 +15,9 @@
 		F68DE4811DB07C3B0064A0F0 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F68DE47F1DB07C3B0064A0F0 /* LaunchScreen.storyboard */; };
 		F68DE48C1DB07C3B0064A0F0 /* _________Tests.m in Sources */ = {isa = PBXBuildFile; fileRef = F68DE48B1DB07C3B0064A0F0 /* _________Tests.m */; };
 		F68DE4971DB07C3B0064A0F0 /* _________UITests.m in Sources */ = {isa = PBXBuildFile; fileRef = F68DE4961DB07C3B0064A0F0 /* _________UITests.m */; };
+		F68DE4AA1DB07D410064A0F0 /* MainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F68DE4A91DB07D410064A0F0 /* MainViewController.m */; };
+		F68DE4AE1DB081470064A0F0 /* head.png in Resources */ = {isa = PBXBuildFile; fileRef = F68DE4AD1DB081470064A0F0 /* head.png */; };
+		F68DE4B11DB0882C0064A0F0 /* UIView+Extension.m in Sources */ = {isa = PBXBuildFile; fileRef = F68DE4B01DB0882C0064A0F0 /* UIView+Extension.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +54,11 @@
 		F68DE4921DB07C3B0064A0F0 /* 导航栏渐变文字效果UITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "导航栏渐变文字效果UITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		F68DE4961DB07C3B0064A0F0 /* _________UITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "_________UITests.m"; sourceTree = "<group>"; };
 		F68DE4981DB07C3B0064A0F0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F68DE4A81DB07D410064A0F0 /* MainViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MainViewController.h; sourceTree = "<group>"; };
+		F68DE4A91DB07D410064A0F0 /* MainViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MainViewController.m; sourceTree = "<group>"; };
+		F68DE4AD1DB081470064A0F0 /* head.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = head.png; sourceTree = "<group>"; };
+		F68DE4AF1DB0882C0064A0F0 /* UIView+Extension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+Extension.h"; sourceTree = "<group>"; };
+		F68DE4B01DB0882C0064A0F0 /* UIView+Extension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+Extension.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -101,10 +109,11 @@
 		F68DE4701DB07C3B0064A0F0 /* 导航栏渐变文字效果 */ = {
 			isa = PBXGroup;
 			children = (
-				F68DE4741DB07C3B0064A0F0 /* AppDelegate.h */,
-				F68DE4751DB07C3B0064A0F0 /* AppDelegate.m */,
-				F68DE4771DB07C3B0064A0F0 /* ViewController.h */,
-				F68DE4781DB07C3B0064A0F0 /* ViewController.m */,
+				F68DE4AD1DB081470064A0F0 /* head.png */,
+				F68DE4AF1DB0882C0064A0F0 /* UIView+Extension.h */,
+				F68DE4B01DB0882C0064A0F0 /* UIView+Extension.m */,
+				F68DE4A51DB07CF10064A0F0 /* Dome */,
+				F68DE4A41DB07C460064A0F0 /* Other */,
 				F68DE47A1DB07C3B0064A0F0 /* Main.storyboard */,
 				F68DE47D1DB07C3B0064A0F0 /* Assets.xcassets */,
 				F68DE47F1DB07C3B0064A0F0 /* LaunchScreen.storyboard */,
@@ -138,6 +147,34 @@
 				F68DE4981DB07C3B0064A0F0 /* Info.plist */,
 			);
 			path = "导航栏渐变文字效果UITests";
+			sourceTree = "<group>";
+		};
+		F68DE4A41DB07C460064A0F0 /* Other */ = {
+			isa = PBXGroup;
+			children = (
+				F68DE4741DB07C3B0064A0F0 /* AppDelegate.h */,
+				F68DE4751DB07C3B0064A0F0 /* AppDelegate.m */,
+				F68DE4771DB07C3B0064A0F0 /* ViewController.h */,
+				F68DE4781DB07C3B0064A0F0 /* ViewController.m */,
+			);
+			name = Other;
+			sourceTree = "<group>";
+		};
+		F68DE4A51DB07CF10064A0F0 /* Dome */ = {
+			isa = PBXGroup;
+			children = (
+				F68DE4A71DB07CF10064A0F0 /* ViewController */,
+			);
+			path = Dome;
+			sourceTree = "<group>";
+		};
+		F68DE4A71DB07CF10064A0F0 /* ViewController */ = {
+			isa = PBXGroup;
+			children = (
+				F68DE4A81DB07D410064A0F0 /* MainViewController.h */,
+				F68DE4A91DB07D410064A0F0 /* MainViewController.m */,
+			);
+			path = ViewController;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -250,6 +287,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				F68DE4811DB07C3B0064A0F0 /* LaunchScreen.storyboard in Resources */,
+				F68DE4AE1DB081470064A0F0 /* head.png in Resources */,
 				F68DE47E1DB07C3B0064A0F0 /* Assets.xcassets in Resources */,
 				F68DE47C1DB07C3B0064A0F0 /* Main.storyboard in Resources */,
 			);
@@ -276,9 +314,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F68DE4B11DB0882C0064A0F0 /* UIView+Extension.m in Sources */,
 				F68DE4791DB07C3B0064A0F0 /* ViewController.m in Sources */,
 				F68DE4761DB07C3B0064A0F0 /* AppDelegate.m in Sources */,
 				F68DE4731DB07C3B0064A0F0 /* main.m in Sources */,
+				F68DE4AA1DB07D410064A0F0 /* MainViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -514,6 +554,7 @@
 				F68DE49D1DB07C3B0064A0F0 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		F68DE49E1DB07C3B0064A0F0 /* Build configuration list for PBXNativeTarget "导航栏渐变文字效果Tests" */ = {
 			isa = XCConfigurationList;
@@ -522,6 +563,7 @@
 				F68DE4A01DB07C3B0064A0F0 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		F68DE4A11DB07C3B0064A0F0 /* Build configuration list for PBXNativeTarget "导航栏渐变文字效果UITests" */ = {
 			isa = XCConfigurationList;
@@ -530,6 +572,7 @@
 				F68DE4A31DB07C3B0064A0F0 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
